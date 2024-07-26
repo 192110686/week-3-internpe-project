@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #000430;
+    --secondaryBackground: #171c48;
+    --text: #fff;
+    --purple: #828dff;
+    --teal: #24feee;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 120px auto 0 auto;
+    max-width: 600px;
+}
+
+.stats-container {
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid var(--purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    background: var(--secondaryBackground);
+}
+
+.details {
+    text-align: center;
+}
+
+#progressBar {
+    width: 100%;
+    height: 10px;
+    background-color: var(--secondaryBackground);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#progress {
+    height: 10px;
+    background-color: var(--teal);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+#numbers {
+    width: 100px;
+    height: 100px;
+    background-color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+form {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 16px;
+    background: var(--secondaryBackground);
+    border: 1px solid var(--purple);
+    border-radius: 10px;
+    color: var(--text);
+}
+
+button {
+    background-color: var(--teal);
+    border: none;
+    color: var(--text);
+    padding: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #1ab5e1;
+}
+
+ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid var(--purple);
+    border-radius: 10px;
+    background-color: var(--secondaryBackground);
+}
+
+.task-item.completed label {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.checkbox-container {
+    margin-right: 20px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.5);
+}
+
+.delete-btn {
+    margin-left: auto;
+    background: var(--purple);
+    color: var(--text);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-btn:hover {
+    background: #6e5fd0;
+}
+
+.name-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#name-input {
+    width: 100%;
+    padding: 16px;
+    background: var(--secondaryBackground);
+    border: 1px solid var(--purple);
+    border-radius: 10px;
+    color: var(--text);
+}
+
+#celebration {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#celebration.hidden {
+    display: none;
+}
+
+#celebration h2 {
+    color: var(--teal);
+    font-size: 24px;
+}
+
+#celebration p {
+    color: var(--text);
+    font-size: 18px;
+}
